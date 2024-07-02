@@ -1,4 +1,4 @@
-#### fictional dataset named `p4n_employee` that contains information about employees in a company. We'll include features like age, department, years at the company, and salary to predict whether an employee is likely to leave the company.
+#### Fictional dataset named `p4n_employee` that contains information about employees in a company. We'll include features like age, department, years at the company, and salary to predict whether an employee is likely to leave the company.
 
 ## Creating the Dataset
 

@@ -49,10 +49,7 @@
 
 ### 4. Key Concepts in KNN
 
-**Distance Metrics**:
-- **Euclidean Distance**: \( d(x, y) = \sqrt{\sum_{i=1}^n (x_i - y_i)^2} \)
-- **Manhattan Distance**: \( d(x, y) = \sum_{i=1}^n |x_i - y_i| \)
-- **Minkowski Distance**: \( d(x, y) = \left( \sum_{i=1}^n |x_i - y_i|^p \right)^{1/p} \)
+![alt text](image.png)
 
 **Choosing K**:
 - A small value of K can be noisy and lead to overfitting.

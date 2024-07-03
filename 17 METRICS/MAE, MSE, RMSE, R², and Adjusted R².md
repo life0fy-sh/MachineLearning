@@ -12,7 +12,7 @@ In machine learning, evaluating the performance of regression models requires va
 2. **Mean Absolute Error (MAE)**
    - Definition and Formula
    - Interpretation
-   - Example Calculation
+   - Example Calculation    
 
 3. **Mean Squared Error (MSE)**
    - Definition and Formula
@@ -188,6 +188,3 @@ Evaluation**: Use MAE, MSE, RMSE, R², and Adjusted R² to evaluate the model.
 - **Model Comparison**: Use multiple metrics to compare different models and select the best one.
 - **Interpretation**: Understand the meaning and implications of each metric for better model evaluation.
 
----
-
-This detailed tutorial provides an in-depth understanding of common regression metrics in machine learning, including their definitions, formulas, interpretations, and practical implementations.

@@ -61,7 +61,7 @@ In machine learning, evaluating the performance of regression models requires va
 #### Definition and Formula
 - **MAE**: The average of the absolute differences between predicted and actual values.
 - **Formula**: 
-  ![alt text](image.png)
+![alt text](image.png)
 
 #### Interpretation
 - **MAE**: Measures the average magnitude of errors in a set of predictions, without considering their direction.
@@ -75,7 +75,7 @@ In machine learning, evaluating the performance of regression models requires va
 #### Definition and Formula
 - **MSE**: The average of the squared differences between predicted and actual values.
 - **Formula**: 
-  ![alt text](image-2.png)
+![alt text](image-2.png)
 
 #### Interpretation
 - **MSE**: Measures the average squared difference between predicted and actual values.
@@ -91,7 +91,7 @@ Using the same actual and predicted values:
 #### Definition and Formula
 - **RMSE**: The square root of the average of the squared differences between predicted and actual values.
 - **Formula**: 
-  ![alt text](image-4.png)
+![alt text](image-4.png)
 
 #### Interpretation
 - **RMSE**: Measures the average magnitude of the error. It gives a higher weight to larger errors compared to MAE.
@@ -107,7 +107,7 @@ Using the MSE calculated previously:
 #### Definition and Formula
 - **R²**: The proportion of the variance in the dependent variable that is predictable from the independent variables.
 - **Formula**: 
-  ![alt text](image-6.png)
+![alt text](image-6.png)
 
 #### Interpretation
 - **R²**: Indicates the proportion of the variance explained by the model.
@@ -123,7 +123,7 @@ Using the actual values \( y = [3, -0.5, 2, 7] \) and predicted values \( \hat{y
 #### Definition and Formula
 - **Adjusted R²**: Adjusts the R² value based on the number of predictors in the model.
 - **Formula**: 
-  ![alt text](image-8.png)
+![alt text](image-8.png)
   where \( n \) is the number of observations and \( p \) is the number of predictors.
 
 #### Interpretation

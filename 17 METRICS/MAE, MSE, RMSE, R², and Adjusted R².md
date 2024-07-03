@@ -61,30 +61,21 @@ In machine learning, evaluating the performance of regression models requires va
 #### Definition and Formula
 - **MAE**: The average of the absolute differences between predicted and actual values.
 - **Formula**: 
-  \[
-  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
-  \]
-  where \( y_i \) is the actual value, \( \hat{y}_i \) is the predicted value, and \( n \) is the number of observations.
+  ![alt text](image.png)
 
 #### Interpretation
 - **MAE**: Measures the average magnitude of errors in a set of predictions, without considering their direction.
 - **Lower MAE**: Indicates a better fit.
 
 #### Example Calculation
-Assume actual values \( y = [3, -0.5, 2, 7] \) and predicted values \( \hat{y} = [2.5, 0.0, 2, 8] \).
-
-\[
-\text{MAE} = \frac{|3 - 2.5| + |-0.5 - 0.0| + |2 - 2| + |7 - 8|}{4} = \frac{0.5 + 0.5 + 0 + 1}{4} = 0.5
-\]
+![alt text](image-1.png)
 
 ### 3. Mean Squared Error (MSE)
 
 #### Definition and Formula
 - **MSE**: The average of the squared differences between predicted and actual values.
 - **Formula**: 
-  \[
-  \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-  \]
+  ![alt text](image-2.png)
 
 #### Interpretation
 - **MSE**: Measures the average squared difference between predicted and actual values.
@@ -93,18 +84,14 @@ Assume actual values \( y = [3, -0.5, 2, 7] \) and predicted values \( \hat{y} =
 #### Example Calculation
 Using the same actual and predicted values:
 
-\[
-\text{MSE} = \frac{(3 - 2.5)^2 + (-0.5 - 0.0)^2 + (2 - 2)^2 + (7 - 8)^2}{4} = \frac{0.25 + 0.25 + 0 + 1}{4} = 0.375
-\]
+![alt text](image-3.png)
 
 ### 4. Root Mean Squared Error (RMSE)
 
 #### Definition and Formula
 - **RMSE**: The square root of the average of the squared differences between predicted and actual values.
 - **Formula**: 
-  \[
-  \text{RMSE} = \sqrt{\text{MSE}} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
-  \]
+  ![alt text](image-4.png)
 
 #### Interpretation
 - **RMSE**: Measures the average magnitude of the error. It gives a higher weight to larger errors compared to MAE.
@@ -113,19 +100,14 @@ Using the same actual and predicted values:
 #### Example Calculation
 Using the MSE calculated previously:
 
-\[
-\text{RMSE} = \sqrt{0.375} \approx 0.612
-\]
+![alt text](image-5.png)
 
 ### 5. R-squared (R²)
 
 #### Definition and Formula
 - **R²**: The proportion of the variance in the dependent variable that is predictable from the independent variables.
 - **Formula**: 
-  \[
-  R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
-  \]
-  where \( \bar{y} \) is the mean of actual values.
+  ![alt text](image-6.png)
 
 #### Interpretation
 - **R²**: Indicates the proportion of the variance explained by the model.
@@ -134,22 +116,14 @@ Using the MSE calculated previously:
 #### Example Calculation
 Using the actual values \( y = [3, -0.5, 2, 7] \) and predicted values \( \hat{y} = [2.5, 0.0, 2, 8] \):
 
-\[
-\bar{y} = \frac{3 + (-0.5) + 2 + 7}{4} = 2.875
-\]
-
-\[
-R^2 = 1 - \frac{(0.5^2 + 0.5^2 + 0^2 + 1^2)}{((3-2.875)^2 + (-0.5-2.875)^2 + (2-2.875)^2 + (7-2.875)^2)} = 1 - \frac{0.375}{27.25} \approx 0.986
-\]
+![alt text](image-7.png)
 
 ### 6. Adjusted R-squared (Adjusted R²)
 
 #### Definition and Formula
 - **Adjusted R²**: Adjusts the R² value based on the number of predictors in the model.
 - **Formula**: 
-  \[
-  \text{Adjusted } R^2 = 1 - \left( \frac{(1 - R^2)(n - 1)}{n - p - 1} \right)
-  \]
+  ![alt text](image-8.png)
   where \( n \) is the number of observations and \( p \) is the number of predictors.
 
 #### Interpretation
@@ -159,10 +133,7 @@ R^2 = 1 - \frac{(0.5^2 + 0.5^2 + 0^2 + 1^2)}{((3-2.875)^2 + (-0.5-2.875)^2 + (2-
 #### Example Calculation
 Using the R² calculated previously, and assuming \( n = 4 \) and \( p = 1 \):
 
-\[
-\text{Adjusted } R^2 = 1 - \left( \frac{(1 - 0.986)(4 - 1)}{4 - 1 - 1} \right) = 1 - \left( \frac{0.014 \times 3}{2} \right) = 1 - 0.021 = 0.979
-\]
-
+![alt text](image-9.png)
 ### 7. Implementing Metrics in Python
 
 #### Using Scikit-Learn for Metric Calculations

@@ -49,7 +49,8 @@ plt.show()
 #### 2.1. Definition
 Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is a measure of the accuracy of the positive predictions.
 
-\[ \text{Precision} = \frac{TP}{TP + FP} \]
+![image](https://github.com/user-attachments/assets/d94677ac-34f9-4ec7-bdd9-b2182f5f6208)
+
 
 #### 2.2. Importance
 Precision is crucial when the cost of false positives is high, such as in spam detection.
@@ -67,7 +68,8 @@ print(f'Precision: {precision:.2f}')
 #### 3.1. Definition
 Recall (Sensitivity) is the ratio of correctly predicted positive observations to the all observations in actual class.
 
-\[ \text{Recall} = \frac{TP}{TP + FN} \]
+![image](https://github.com/user-attachments/assets/4acfb69d-8565-4174-942d-de0ea90ec2c1)
+
 
 #### 3.2. Importance
 Recall is important in situations where missing a positive class is more costly than having false positives, such as in disease detection.
@@ -85,7 +87,8 @@ print(f'Recall: {recall:.2f}')
 #### 4.1. Definition
 The F1 Score is the harmonic mean of Precision and Recall, providing a single metric that balances both concerns.
 
-\[ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \]
+![image](https://github.com/user-attachments/assets/256ef985-ff9f-4e61-872f-d1a9591fc86a)
+
 
 #### 4.2. Importance
 The F1 Score is useful when you need to balance Precision and Recall and have an uneven class distribution.

@@ -10,27 +10,8 @@
 
 Log Loss measures how well the predicted probabilities of a model align with the true labels. A lower Log Loss indicates a better model.
 
-The formula for Log Loss is:
+![Screenshot 2024-07-15 at 10 51 21 PM](https://github.com/user-attachments/assets/68e0dcb5-96dc-42d0-89fd-ee712c846a0f)
 
-\[
-\text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left( y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right)
-\]
-
-Where:
-- \(N\) = total number of samples
-- \(y_i\) = true label (0 or 1) for sample \(i\)
-- \(p_i\) = predicted probability that sample \(i\) is of class 1
-
-For multi-class classification, the formula extends to:
-
-\[
-\text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{K} y_{ij} \log(p_{ij})
-\]
-
-Where:
-- \(K\) = number of classes
-- \(y_{ij}\) = true label for sample \(i\) and class \(j\) (1 if true class, 0 otherwise)
-- \(p_{ij}\) = predicted probability that sample \(i\) belongs to class \(j\)
 
 ---
 

@@ -12,6 +12,7 @@ Log Loss measures how well the predicted probabilities of a model align with the
 
 ![Screenshot 2024-07-15 at 10 51 21 PM](https://github.com/user-attachments/assets/68e0dcb5-96dc-42d0-89fd-ee712c846a0f)
 
+![Screenshot 2024-07-15 at 10 52 36 PM](https://github.com/user-attachments/assets/1e45f0c2-a2ca-4638-8bea-2bc6c29ed4ce)
 
 ---
 
@@ -24,30 +25,8 @@ Log Loss measures how well the predicted probabilities of a model align with the
 
 #### 3. Example Calculation
 
-Let's calculate Log Loss for a binary classification problem.
+![Screenshot 2024-07-15 at 10 53 12 PM](https://github.com/user-attachments/assets/237fd42d-84e8-4cd8-a84c-ed9e0830f109)
 
-**Example Data:**
-- True labels: \(y = [0, 1, 1, 0]\)
-- Predicted probabilities: \(p = [0.1, 0.9, 0.8, 0.3]\)
-
-**Step-by-Step Calculation:**
-
-1. Calculate individual losses for each sample:
-
-\[
-\begin{align*}
-\text{Log Loss}_1 &= -\left( 0 \cdot \log(0.1) + (1 - 0) \cdot \log(1 - 0.1) \right) = -\log(0.9) \approx 0.1054 \\
-\text{Log Loss}_2 &= -\left( 1 \cdot \log(0.9) + (1 - 1) \cdot \log(1 - 0.9) \right) = -\log(0.9) \approx 0.1054 \\
-\text{Log Loss}_3 &= -\left( 1 \cdot \log(0.8) + (1 - 1) \cdot \log(1 - 0.8) \right) = -\log(0.8) \approx 0.2231 \\
-\text{Log Loss}_4 &= -\left( 0 \cdot \log(0.3) + (1 - 0) \cdot \log(1 - 0.3) \right) = -\log(0.7) \approx 0.3567 \\
-\end{align*}
-\]
-
-2. Calculate the average Log Loss:
-
-\[
-\text{Log Loss} = \frac{1}{4} \left( 0.1054 + 0.1054 + 0.2231 + 0.3567 \right) \approx 0.1977
-\]
 
 ---
 

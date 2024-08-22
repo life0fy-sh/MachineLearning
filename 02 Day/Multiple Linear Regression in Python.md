@@ -8,13 +8,10 @@ For example, if you want to predict house prices, you might consider multiple fa
 
 The general form of a multiple linear regression model is:
 
-\[ y = b_0 + b_1x_1 + b_2x_2 + \dots + b_nx_n \]
 
-Where:
-- \( y \) is the predicted value (e.g., house price),
-- \( b_0 \) is the y-intercept,
-- \( b_1, b_2, \dots, b_n \) are the coefficients (slopes) for each independent variable,
-- \( x_1, x_2, \dots, x_n \) are the independent variables (features).
+
+![image](https://github.com/user-attachments/assets/d844bc77-bbb4-480b-8e27-ff25fdef39fb)
+
 
 ### Step-by-Step Guide to Multiple Linear Regression in Python
 
